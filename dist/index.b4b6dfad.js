@@ -2953,7 +2953,7 @@ var _indexScss = require("./index.scss");
 // Main component (we will eventually use all the others)
 const myFlixApplication = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "my-flix",
+        class: "my-flix",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: "Good morning"
         }, void 0, false, {
