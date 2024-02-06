@@ -1,6 +1,6 @@
 import { useState } from "react"; //importing useState from React
-import { MovieCard } from "./components/movie-card/movie-card"; //importing movie card display
-//import { MovieView } from "./components/movie-view/movie-view"; //importing view of movies
+import { MovieCard } from "../movie-card/movie-card"; //importing movie card display
+import { MovieView } from "./components/movie-view/movie-view"; //importing view of movies
 
 // Main component (we will eventually use all the others)
 export const MainView = () => {
@@ -25,6 +25,13 @@ export const MainView = () => {
         }
     ]);
 
+    const [selectedMovie, setSelectedMovie] = useState(null); //state for selected movie
+    if (selectedMovie) {
+        return (
+            <MovieView movie={selectedMovie} onBackClick={() => setSelectedMovie(null)} />
+        );
+    }
+
     if (movies.length === 0) {
         return <div>There is nothing on the list</div>
     }
@@ -35,6 +42,9 @@ export const MainView = () => {
                 <MovieCard 
                     key={movie.id}
                     movie={movie}
+                    onClick={(newSelectedMovie) => {
+                        setSelectedMovie(newSelectedMovie);
+                    }}
                 />
             ))}
         </div>
