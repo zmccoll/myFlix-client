@@ -1,4 +1,4 @@
-export const MovieView = ({ movie }) => {
+export const MovieView = ({ movie }) => { //this deals with how the movies will be displayed when they get clicked on
     return (
         <div>
                     <div>
