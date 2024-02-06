@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import { useState } from "react"; //importing useState from React
-import { MovieView } from "../movie-view/movie-view";
+import { MovieCard } from "../movie-card/movie-card"; //importing movie card display
+import { MovieView } from "../movie-view/movie-view"; //importing view of movies
 
 // Import statement to indcate that you need to bundle `./index.scss`
 import './index.scss';
