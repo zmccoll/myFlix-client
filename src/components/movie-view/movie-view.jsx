@@ -1,6 +1,7 @@
 export const MovieView = ({ movie }) => {
     return (
         <div>
+                    <div>
             <img src={movie.image} />
         </div>
         <div>
@@ -11,5 +12,7 @@ export const MovieView = ({ movie }) => {
             <span>Director</span>
             <span>{movie.director}</span>
         </div>
+        </div>
+
     );
 };
