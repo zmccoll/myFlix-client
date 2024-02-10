@@ -11,17 +11,18 @@ export const MainView = () => {
         fetch('https://salty-temple-07534-fcfeb8dd028b.herokuapp.com/movies')
         .then((res) => res.json())
         .then((data) => {
-            const moviesFromApi = data.docs.map(doc) => {
+            const moviesFromApi = data.docs.map((doc) => {
                 return {
                     title: doc.title,
                     image: doc.image,
                     director: doc.director,
                     genre: doc.genre
                 }
-            }
-            setMovie(moviesFromApi)
-        })
-    })
+            });
+            
+            setMovies(moviesFromApi)
+        });
+    }, []);
 
     if (selectedMovie) {
         return (
