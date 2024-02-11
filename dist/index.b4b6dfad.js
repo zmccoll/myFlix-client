@@ -27475,7 +27475,7 @@ const MovieView = ({ movie, onBackClick })=>{
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: movie.title
+                        children: movie.Title
                     }, void 0, false, {
                         fileName: "src/components/movie-view/movie-view.jsx",
                         lineNumber: 9,
@@ -27519,7 +27519,7 @@ const MovieView = ({ movie, onBackClick })=>{
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: movie.Genre.name
+                        children: movie.Genre
                     }, void 0, false, {
                         fileName: "src/components/movie-view/movie-view.jsx",
                         lineNumber: 17,
@@ -27541,7 +27541,7 @@ const MovieView = ({ movie, onBackClick })=>{
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: movie.Director.name
+                        children: movie.Director
                     }, void 0, false, {
                         fileName: "src/components/movie-view/movie-view.jsx",
                         lineNumber: 21,
