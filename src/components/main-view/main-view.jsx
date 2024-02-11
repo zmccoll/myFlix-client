@@ -22,7 +22,7 @@ export const MainView = () => {
             });
             
             setMovies(moviesFromApi)
-        });
+        }) .catch((e) => console.log(e));
     }, []);
 
     if (selectedMovie) {
